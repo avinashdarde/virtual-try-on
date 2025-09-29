@@ -3,34 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Try-On</title>
+    <title>Virtual Try-On Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>My Virtual Try-On</h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="main-container">
-
-        <div class="clothing-options">
-            <h2>Shirts</h2>
-            <div id="shirt-options">
+    <main>
+        <div class="try-on-area">
+            <div class="avatar-container">
+                <img src="images/avatar.png" alt="Avatar" class="avatar-base">
+                <div id="worn-items">
+                    <img id="worn-shirt" src="images/shirt1.png" alt="">
+                    <img id="worn-pants" src="images/pants1.png" alt="">
                 </div>
-
-            <h2>Pants</h2>
-            <div id="pants-options">
-                </div>
-        </div>
-
-        <div class="avatar-container">
-            <img src="images/avatar.png" alt="Avatar" class="avatar-base">
-            <div id="worn-items">
-                <img id="worn-shirt" src="" alt="">
-                <img id="worn-pants" src="" alt="">
             </div>
         </div>
 
-    </div>
+        <div class="controls-area">
+            <div id="product-info-box">
+                <div class="product-details">
+                    <h3 id="product-name">Blue T-Shirt</h3>
+                    <p id="product-price">₹1,299 (Available on Amazon)</p>
+                </div>
+                <a id="buy-now-link" href="#" target="_blank">
+                    <button class="buy-now-button">BUY NOW</button>
+                </a>
+            </div>
+
+            <div class="clothing-selector">
+                <h4>Shirts</h4>
+                <div id="shirt-options" class="options-container">
+                    </div>
+                <h4>Pants</h4>
+                <div id="pants-options" class="options-container">
+                    </div>
+            </div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
