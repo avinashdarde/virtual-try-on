@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+.clothing-options {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.option-image {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    object-fit: contain;
+}
+.option-image:hover {
+    border-color: #007bff;
+}
+.avatar-container {
+    position: relative;
+    width: 400px; 
+    height: 600px;
+}
+.avatar-base {
+    width: 100%;
+    height: 100%;
+}
+#worn-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#worn-shirt, #worn-pants {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#worn-shirt { z-index: 2; }
+#worn-pants { z-index: 1; }
